@@ -1,6 +1,6 @@
 *Think about ordering food at a restaurant. You don’t go into the kitchen and cook the food yourself. Instead, you tell the waiter what you want. The waiter takes your order to the kitchen, the kitchen prepares the food, and the waiter brings it back to you. You don’t need to know how the food is cooked, you only need to know how to place the order and receive the result.*
 
-*This is exactly how a REST API works. The application is like the customer, the server is like the kitchen, and the REST API acts as the messenger between them. It takes requests from the application, delivers them to the server, and brings the response back. Let's study **REST API** in detail*
+*This is exactly how a REST API works. The application is like the customer, the server is like the kitchen, and the REST API acts as the messenger between them. It takes requests from the application, delivers them to the server, and brings the response back. Let's study **REST API** in detail*.
 
 
 
