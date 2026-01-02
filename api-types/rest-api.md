@@ -25,9 +25,6 @@ A REST API works like a **messenger between your application and the server**.
 - The server processes it
 - The API sends the response back
 
-<br>
-
-
 
 ---
 <br>
@@ -140,37 +137,23 @@ REST APIs have a few key characteristics that make them simple and widely used.
 
 ### Stateless
 
-Each request sent to a REST API is independent.
+- Each request sent to a REST API is independent.
+- So if you send the same request twice, the server treats it as two separate requests.
 
-This means:
-- The server does not remember past requests
-- Every request contains all the information needed to process it
 
-So if you send the same request twice, the server treats it as two separate requests.
-
-<br>
 
 ### Scalable
 
-REST APIs are designed to handle growth.
+- REST APIs are designed to handle growth.
+- Because requests are independent, servers can handle many users at the same time
 
-Because requests are independent, servers can:
-- handle many users at the same time
-- easily add more servers when traffic increases
 
-This makes REST APIs suitable for large applications.
-
-<br>
 
 ### Platform Independent
 
-REST APIs are not tied to any specific platform or language.
+- REST APIs are not tied to any specific platform or language.
+- The same REST API can be used by web applications, mobile apps, desktop apps and other services.
 
-The same REST API can be used by:
-- web applications
-- mobile apps
-- desktop apps
-- other services
 
 As long as the app can send HTTP requests, it can use a REST API.
 
@@ -224,7 +207,6 @@ often require stricter rules, guaranteed delivery, and stronger contracts.
 
 For very large or real-time systems, REST may not be the fastest option.
 
-Other API types like gRPC or WebSockets may perform better in such cases.
 
 ---
 
