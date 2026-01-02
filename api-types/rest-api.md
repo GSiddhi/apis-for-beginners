@@ -146,12 +146,101 @@ This JSON object represents the user data returned by the API.
 
 ## Key Characteristics of REST APIs
 
-- Stateless: each request is independent
-- Scalable: handles large numbers of users
-- Platform independent: works across web, mobile, and other systems
+REST APIs have a few key characteristics that make them simple and widely used.
+
+
+### Stateless
+
+Each request sent to a REST API is independent.
+
+This means:
+- The server does not remember past requests
+- Every request contains all the information needed to process it
+
+So if you send the same request twice, the server treats it as two separate requests.
+
+<br>
+
+### Scalable
+
+REST APIs are designed to handle growth.
+
+Because requests are independent, servers can:
+- handle many users at the same time
+- easily add more servers when traffic increases
+
+This makes REST APIs suitable for large applications.
+
+<br>
+
+### Platform Independent
+
+REST APIs are not tied to any specific platform or language.
+
+The same REST API can be used by:
+- web applications
+- mobile apps
+- desktop apps
+- other services
+
+As long as the app can send HTTP requests, it can use a REST API.
+
+<br>
 
 ---
 
-## One-Line Summary
+## Limitations of REST APIs
 
-**REST API uses HTTP methods and URLs to perform actions on resources and exchange data over the internet.**
+While REST APIs are simple and widely used, they are not perfect for every situation.
+
+### Overfetching and Underfetching
+
+In REST, an API often returns a fixed set of data.
+
+This can lead to:
+- receiving more data than needed (overfetching)
+- making multiple requests to get all required data (underfetching)
+
+This may increase network usage and slow down applications.
+
+<br>
+
+### Multiple Requests for Related Data
+
+To get related information, REST APIs may require multiple endpoints.
+
+For example:
+- one request for user data
+- another request for user posts
+- another request for comments
+
+This increases the number of API calls.
+
+<br>
+
+### Not Strict Enough for Some Systems
+
+REST APIs are flexible, but this flexibility can be a limitation.
+
+Systems like:
+- banking
+- financial transactions
+- government applications
+
+often require stricter rules, guaranteed delivery, and stronger contracts.
+
+<br>
+
+### Performance Limitations in Large Systems
+
+For very large or real-time systems, REST may not be the fastest option.
+
+Other API types like gRPC or WebSockets may perform better in such cases.
+
+---
+
+## Summary
+
+REST APIs make server communication easy and consistent.
+They allow applications to request, send, and update data in a clear and organized way.
+Because of this, REST APIs are used in most apps and websites today.
