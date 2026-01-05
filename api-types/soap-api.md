@@ -125,14 +125,12 @@ SOAP APIs have specific characteristics that make them suitable for enterprise s
 - SOAP supports advanced security standards.
 - Commonly used in systems requiring high security.
 
----
 
 ### Protocol Independent
 
 - SOAP can work over different protocols.
 - It is not limited to HTTP only.
 
----
 
 ### Reliable Communication
 
@@ -160,24 +158,19 @@ While SOAP APIs are powerful, they have some drawbacks.
 ### Complex and Verbose
 
 - SOAP messages are written in XML, which can be lengthy and complex.
-
 - This makes development slower compared to REST APIs.
 
----
 
 ### Slower Performance
 
-Because SOAP messages are heavy and strict, they can be slower to process.
+- Because SOAP messages are heavy and strict, they can be slower to process.
+- This may not be suitable for lightweight or high-speed applications.
 
-This may not be suitable for lightweight or high-speed applications.
-
----
 
 ### Less Flexible
 
-SOAP APIs require strict contracts.
-
-Any change in structure often requires changes on both client and server.
+- SOAP APIs require strict contracts.
+- Any change in structure often requires changes on both client and server.
 
 ---
 
