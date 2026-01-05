@@ -8,7 +8,7 @@
 
 
 
-## WebRTC API
+# WebRTC API
 
 - WebRTC API enables real-time communication between devices.
 - It supports audio, video, and data transfer.
@@ -16,7 +16,7 @@
 
 ---
 
-# What is WebRTC?
+## What is WebRTC?
 
 WebRTC stands for **Web Real-Time Communication**.
 
