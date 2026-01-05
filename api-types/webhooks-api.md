@@ -64,28 +64,21 @@ Example payload:
 Webhooks have certain characteristics that make them useful for real-time systems.
 
 ### Event-Driven
-
 - Webhooks are triggered by events
 - Data is sent only when something happens
 
----
 
 ### Real-Time Updates
-
 - Information is delivered instantly
 - No delays caused by repeated requests
 
----
 
 ### Efficient Communication
-
 - Reduces unnecessary network calls
 - Saves server and client resources
 
----
 
 ### One-Way Communication
-
 - Data flows from server to client
 - The client does not request the data
 
@@ -111,23 +104,17 @@ Examples include:
 While Webhooks are efficient, they also have limitations.
 
 ### Delivery Failures
-
-If the receiving server is down, the webhook may fail.
+- If the receiving server is down, the webhook may fail.
 Retry mechanisms must be implemented.
 
----
 
 ### Security Concerns
-
-Webhook endpoints must be secured.
+-Webhook endpoints must be secured.
 Otherwise, they can be exposed to unauthorized requests.
 
----
-
 ### No Response Control
-
-Webhooks are one-way.
-The sender does not wait for complex responses from the receiver.
+- Webhooks are one-way.
+- The sender does not wait for complex responses from the receiver.
 
 ---
 
