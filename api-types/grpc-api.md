@@ -173,7 +173,7 @@ While gRPC APIs are powerful, they also have limitations.
 
 ### Learning Curve
 
-Understanding Protobuf and streaming patterns can be challenging for beginners.
+- Understanding Protobuf and streaming patterns can be challenging for beginners.
 
 ---
 
