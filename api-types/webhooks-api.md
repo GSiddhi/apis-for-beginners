@@ -59,6 +59,38 @@ Example payload:
 
 ---
 
+## Example Callback URL
+
+A callback URL is usually a public endpoint on the client’s system.
+
+Example:
+https://myapp.com/webhooks/order-status
+
+
+In this example:
+- `myapp.com` is the client application
+- `/webhooks/order-status` is the endpoint created to receive webhook events
+
+When an event occurs, the server sends a POST request with event data to this URL.
+
+---
+
+
+
+## Where Webhooks APIs Are Commonly Used
+
+Webhooks are commonly used in:
+- payment systems
+- e-commerce platforms
+- CI/CD pipelines
+- messaging and notification systems
+
+Examples include:
+- payment confirmation notifications
+- order status updates
+- code push events
+
+---
 ## Key Characteristics of Webhooks APIs
 
 Webhooks have certain characteristics that make them useful for real-time systems.
@@ -81,21 +113,6 @@ Webhooks have certain characteristics that make them useful for real-time system
 ### One-Way Communication
 - Data flows from server to client
 - The client does not request the data
-
----
-
-## Where Webhooks APIs Are Commonly Used
-
-Webhooks are commonly used in:
-- payment systems
-- e-commerce platforms
-- CI/CD pipelines
-- messaging and notification systems
-
-Examples include:
-- payment confirmation notifications
-- order status updates
-- code push events
 
 ---
 
