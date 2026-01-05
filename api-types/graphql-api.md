@@ -24,7 +24,6 @@ It is a query language for APIs and a runtime for executing those queries.
 A GraphQL API allows the client to **decide what data it wants**, instead of the server deciding the response structure.
 
 ---
-
 <br>
 
 Unlike REST, GraphQL usually works with **a single endpoint**.
@@ -68,7 +67,18 @@ Example:
 ```
 This query asks only for the user’s id, name, and email — nothing extra.
 
-<br>
+---
+
+## Where GraphQL APIs Are Commonly Used
+
+GraphQL APIs are commonly used in:
+- frontend-heavy applications
+- mobile applications
+- dashboards and data-driven apps
+
+They are especially useful when different clients need different data shapes.
+
+---
 
 ## Key Characteristics of GraphQL APIs
 
@@ -93,17 +103,6 @@ GraphQL APIs have certain characteristics that make them flexible and efficient.
 
 - GraphQL supports subscriptions.  
 - Clients can receive real-time updates when data changes.
-
----
-
-## Where GraphQL APIs Are Commonly Used
-
-GraphQL APIs are commonly used in:
-- frontend-heavy applications
-- mobile applications
-- dashboards and data-driven apps
-
-They are especially useful when different clients need different data shapes.
 
 ---
 
