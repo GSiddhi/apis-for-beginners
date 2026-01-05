@@ -116,6 +116,18 @@ This is similar to a normal API call.
 
 ---
 
+## Where gRPC APIs Are Commonly Used
+
+gRPC APIs are commonly used in:
+- microservices architectures
+- real-time systems
+- internal service communication
+- large-scale distributed systems
+
+They are often used behind the scenes rather than exposed publicly.
+
+---
+
 ## Key Characteristics of gRPC APIs
 
 gRPC APIs have characteristics that make them suitable for high-performance systems.
@@ -142,18 +154,6 @@ gRPC APIs have characteristics that make them suitable for high-performance syst
 
 - Supports many programming languages
 - Enables easy communication between different tech stacks
-
----
-
-## Where gRPC APIs Are Commonly Used
-
-gRPC APIs are commonly used in:
-- microservices architectures
-- real-time systems
-- internal service communication
-- large-scale distributed systems
-
-They are often used behind the scenes rather than exposed publicly.
 
 ---
 
