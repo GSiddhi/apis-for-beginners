@@ -166,34 +166,18 @@ As long as the app can send HTTP requests, it can use a REST API.
 While REST APIs are simple and widely used, they are not perfect for every situation.
 
 ### Overfetching and Underfetching
-
-In REST, an API often returns a fixed set of data.
-
-This can lead to:
 - receiving more data than needed (overfetching)
 - making multiple requests to get all required data (underfetching)
 
-This may increase network usage and slow down applications.
-
-<br>
 
 ### Multiple Requests for Related Data
-
-To get related information, REST APIs may require multiple endpoints.
-
 For example:
 - one request for user data
 - another request for user posts
 - another request for comments
 
-This increases the number of API calls.
-
-<br>
 
 ### Not Strict Enough for Some Systems
-
-REST APIs are flexible, but this flexibility can be a limitation.
-
 Systems like:
 - banking
 - financial transactions
@@ -201,11 +185,10 @@ Systems like:
 
 often require stricter rules, guaranteed delivery, and stronger contracts.
 
-<br>
 
 ### Performance Limitations in Large Systems
 
-For very large or real-time systems, REST may not be the fastest option.
+- For very large or real-time systems, REST may not be the fastest option.
 
 
 ---
