@@ -1,6 +1,6 @@
 *Think about ordering food at a restaurant. You don’t go into the kitchen and cook the food yourself. Instead, you tell the waiter what you want. The waiter takes your order to the kitchen, the kitchen prepares the food, and the waiter brings it back to you. You don’t need to know how the food is cooked, you only need to know how to place the order and receive the result.*
 
-*This is exactly how a REST API works. The application is like the customer, the server is like the kitchen, and the REST API acts as the messenger between them. It takes requests from the application, delivers them to the server, and brings the response back.
+*This is exactly how communication through a REST API works. The application is like the customer, the server is like the kitchen, and the REST API acts as the messenger between them. It takes requests from the application, delivers them to the server, and brings the response back.
 
 
 
@@ -55,49 +55,118 @@ So when a request is sent, the URL answers one simple question:
 
 **“Which data does this request refer to?”**
 
+<br>
+
 ## HTTP Methods in REST APIs
 
 ### 1. GET – Retrieve data
 
 GET is used to **fetch data** from the server.
 
-Example:
- GET https://api.myapp.com/users/1
+### Example: Fetching User Profile
 
+When the app needs to display a user’s profile, it sends a GET request.
+
+```python
+import requests
+
+response = requests.get("https://api.myapp.com/users/1")
+```
 This request asks the server to return details of the user with ID 1.
+The server processes the request and returns user data.
 
-<br>
+### Example Response
+```json
+{
+  "id": 1,
+  "name": "Siddhi",
+  "email": "siddhi@example.com"
+}
+```
+The app reads this data and displays it to the user.
+
+---
 
 ### 2. POST – Create data
 
 POST is used to **send new data** to the server.
 
-Example:
-POST https://api.myapp.com/users
+### Example: Creating a New User 
+
+When a user signs up, the app sends user details to the server.
+```python
+
+data = {
+  "name": "Siddhi",
+  "email": "siddhi@example.com"
+}
+
+response = requests.post("https://api.myapp.com/users", json=data)
+```
 
 This request tells the server to create a new user.
+The server creates a new user record.
 
-<br>
+### Example Response
+```json
+{
+  "id": 2,
+  "name": "Siddhi",
+  "email": "siddhi@example.com"
+}
+```
+The server assigns an ID and sends the created user data back.
+
+---
 
 ### 3. PUT – Update data
 
 PUT is used to **update existing data** on the server.
 
-Example:
-PUT https://api.myapp.com/users/1
+### Example: Updating User Details 
+
+When a user edits their profile, the app updates existing data.
+```python
+updated_data = {
+  "name": "Siddhi Gujarathi"
+}
+
+response = requests.put("https://api.myapp.com/users/1", json=updated_data)
+```
 
 This request tells the server to update details of the user with ID 1.
 
-<br>
+### Example Response
+```json
+{
+  "id": 1,
+  "name": "Siddhi Gujarathi",
+  "email": "siddhi@example.com"
+}
+```
+The server updates the stored data and returns the updated profile.
+
+---
 
 ### 4. DELETE – Remove data
 
 DELETE is used to **delete data** from the server.
 
-Example:
-DELETE https://api.myapp.com/users/1
+### Example: Deleting a User
 
+When a user deletes their account, the app sends a DELETE request.
+```python
+response = requests.delete("https://api.myapp.com/users/1")
+```
 This request tells the server to delete the user with ID 1.
+
+### Example Response
+```json
+{
+  "message": "User deleted successfully"
+}
+```
+The server removes the user and confirms the action.
 
 <br>
 
