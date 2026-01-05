@@ -76,3 +76,50 @@ response = requests.post("https://api.myapp.com/users", json=data)
 The server creates a new user record.
 
 ### Example Response
+
+```json
+{
+  "id": 2,
+  "name": "Siddhi",
+  "email": "siddhi@example.com"
+}
+```
+The server assigns an ID and sends the created user data back.
+
+## Updating User Details (PUT)
+
+When a user edits their profile, the app updates existing data.
+
+```python
+updated_data = {
+  "name": "Siddhi Gujarathi"
+}
+
+response = requests.put("https://api.myapp.com/users/1", json=updated_data)
+```
+### Example Response
+```json
+{
+  "id": 1,
+  "name": "Siddhi Gujarathi",
+  "email": "siddhi@example.com"
+}
+```
+The server updates the stored data and returns the updated profile.
+
+## Deleting a User (DELETE)
+
+When a user deletes their account, the app sends a DELETE request.
+
+```python
+response = requests.delete("https://api.myapp.com/users/1")
+```
+
+### Example Response
+
+```json
+{
+  "message": "User deleted successfully"
+}
+```
+The server removes the user and confirms the action.
