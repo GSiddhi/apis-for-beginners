@@ -67,3 +67,69 @@ Example:
 }
 ```
 This query asks only for the user’s id, name, and email — nothing extra.
+
+<br>
+
+## Key Characteristics of GraphQL APIs
+
+GraphQL APIs have certain characteristics that make them flexible and efficient.
+
+### Exact Data Fetching
+
+- Clients request only the fields they need.  
+- No extra or missing data is returned.
+
+### Single Endpoint
+
+- GraphQL APIs usually expose a single endpoint.  
+- All queries and mutations are sent to the same endpoint.
+
+### Strongly Typed Schema
+
+- GraphQL APIs define a schema.  
+- The schema describes what data is available and how it can be queried.
+
+### Real-Time Updates
+
+- GraphQL supports subscriptions.  
+- Clients can receive real-time updates when data changes.
+
+---
+
+## Where GraphQL APIs Are Commonly Used
+
+GraphQL APIs are commonly used in:
+- frontend-heavy applications
+- mobile applications
+- dashboards and data-driven apps
+
+They are especially useful when different clients need different data shapes.
+
+---
+
+## Limitations of GraphQL APIs
+
+While GraphQL APIs are powerful, they also have limitations.
+
+### Complex Setup
+
+- GraphQL requires defining schemas and resolvers.  
+- This adds complexity compared to simple REST APIs.
+
+### Caching Challenges
+
+- Because queries are flexible, caching GraphQL responses can be more difficult.
+
+### Overuse of Complex Queries
+
+- Poorly designed queries can overload the server.  
+- This requires careful query design and limits.
+
+---
+
+## Summary
+
+GraphQL APIs allow clients to request exactly the data they need.  
+This reduces unnecessary data transfer and improves efficiency.  
+That is why GraphQL is popular in modern, data-driven applications.
+
