@@ -136,21 +136,16 @@ REST APIs have a few key characteristics that make them simple and widely used.
 
 
 ### Stateless
-
 - Each request sent to a REST API is independent.
 - So if you send the same request twice, the server treats it as two separate requests.
 
 
-
 ### Scalable
-
 - REST APIs are designed to handle growth.
 - Because requests are independent, servers can handle many users at the same time
 
 
-
 ### Platform Independent
-
 - REST APIs are not tied to any specific platform or language.
 - The same REST API can be used by web applications, mobile apps, desktop apps and other services.
 
