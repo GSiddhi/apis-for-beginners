@@ -80,13 +80,13 @@ Execution instructions for each example are available here:
 - [How to run the examples](examples/README.md)
 
 Examples included:
-- [REST API](examples/rest-api-example.md) (Python)
-- [SOAP API](examples/soap-api-example.md) (Python)
-- [GraphQL API](examples/graphql-api-example.md) (Python)
-- [gRPC API](examples/grpc-api-example.md) (Python – structure-focused)
-- [Webhooks](examples/webhooks-api-example.md) (Python server)
-- [WebSockets](examples/websockets-api-example.md) (Python server & client)
-- [WebRTC](examples/webrtc-api-example.md) (Browser-based HTML example)
+- [REST API](examples/rest-api-example.py) (Python)
+- [SOAP API](examples/soap-api-example.py) (Python)
+- [GraphQL API](examples/graphql-api-example.py) (Python)
+- [gRPC API](examples/grpc-api-example.py) (Python – structure-focused)
+- [Webhooks](examples/webhooks-api-example.py) (Python server)
+- [WebSockets](examples/websockets-api-example.py) (Python server & client)
+- [WebRTC](examples/webrtc-api-example.html) (Browser-based HTML example)
 
 ---
 
