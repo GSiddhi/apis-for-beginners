@@ -1,3 +1,11 @@
+"""
+REST API Example – Python
+
+This file demonstrates how a Python application interacts with a REST API.
+It shows a complete flow of creating, fetching, updating, and deleting
+a resource using HTTP requests.
+"""
+
 import requests
 
 BASE_URL = "https://jsonplaceholder.typicode.com"
