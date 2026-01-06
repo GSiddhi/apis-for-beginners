@@ -1,10 +1,16 @@
 """
 SOAP API Example – Python
 
-This file demonstrates how a Python application interacts with a SOAP API.
-It shows how a SOAP request is constructed using XML, sent over HTTP,
-and how a SOAP response is received from the server.
+This file shows a basic example of calling a SOAP API from Python.
+
+In this example:
+- an XML SOAP request is constructed
+- the request is sent to a SOAP service endpoint using HTTP POST
+- the server processes the request and returns an XML response
+
+This demonstrates how SOAP APIs are used in code.
 """
+
 
 import requests
 
