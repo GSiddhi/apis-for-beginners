@@ -12,7 +12,8 @@ In this example:
 
 import grpc
 
-# These files are generated from a .proto file
+# Note:
+# user_pb2 and user_pb2_grpc are generated from a .proto file using protoc.
 # They contain message definitions and the client stub
 import user_pb2
 import user_pb2_grpc
