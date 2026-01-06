@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebRTC Example</title>
+</head>
+
+<body>
+  <h2>WebRTC Example – Local Media Stream</h2>
+
+  <video id="video" autoplay playsinline></video>
+
+  <script>
+    /*
+      WebRTC Example
+
+      This example demonstrates how WebRTC is used to access
+      a user's camera and display the video stream.
+
+      In this example:
+      - the browser requests access to the camera
+      - a media stream is created
+      - the stream is attached to a video element
+    */
+
+    async function startVideo() {
+      // Request access to the user's camera
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: false
+      });
+
+      // Display the camera stream in the video element
+      const videoElement = document.getElementById("video");
+      videoElement.srcObject = stream;
+    }
+
+    startVideo();
+  </script>
+</body>
+</html>
+
