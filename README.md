@@ -6,6 +6,8 @@ through simple explanations and practical examples.
 The goal of this repo is to help you understand **how APIs work in real
 applications**, without heavy theory or complex setups.
 
+📖 Medium Article: https://medium.com/@gujarathisiddhi2402/apis-for-beginners-what-they-are-and-how-they-work-df647f7ac8cc
+
 ---
 
 ## What is an API?
